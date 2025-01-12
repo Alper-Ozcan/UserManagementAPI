@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S+q1vy2ltGovgPOkg54zw80I00zyHWRr8ulIB70bRi4=",
+  "Hash": "LywaQv14z2Jz23pYHHVrrM2iEeplmPLM5rD6dj/d09Y=",
   "Source": "UserManagementAPI",
   "BasePath": "_content/UserManagementAPI",
   "Mode": "Default",
@@ -10,38 +10,38 @@
     {
       "Name": "UserManagementAPI\\wwwroot",
       "Source": "UserManagementAPI",
-      "ContentRoot": "C:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\wwwroot\\",
+      "ContentRoot": "C:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\wwwroot\\",
       "BasePath": "_content/UserManagementAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-u8w3k517au.gz",
+      "Identity": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-3uc2lnl9xi.gz",
       "SourceId": "UserManagementAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/UserManagementAPI",
-      "RelativePath": "index#[.{fingerprint=u8w3k517au}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=3uc2lnl9xi}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\wwwroot\\index.html",
+      "RelatedAsset": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5ipwi4w04u",
-      "Integrity": "HSu92NVAJbNnluDRmCeqC7u74UhTkiIUJ+jCgHDzmDs=",
+      "Fingerprint": "6n5g0992hj",
+      "Integrity": "bquTkngYSWPRISV3wMQSVqrqPUj4yS4PHaExIEenrsY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\wwwroot\\index.html"
+      "OriginalItemSpec": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\wwwroot\\index.html"
     },
     {
-      "Identity": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\wwwroot\\index.html",
+      "Identity": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\wwwroot\\index.html",
       "SourceId": "UserManagementAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\wwwroot\\",
+      "ContentRoot": "C:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\wwwroot\\",
       "BasePath": "_content/UserManagementAPI",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u8w3k517au",
-      "Integrity": "AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM=",
+      "Fingerprint": "3uc2lnl9xi",
+      "Integrity": "ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -61,13 +61,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "index.html",
-      "AssetFile": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-u8w3k517au.gz",
+      "Route": "index.3uc2lnl9xi.html",
+      "AssetFile": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-3uc2lnl9xi.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000630914826"
+          "Quality": "0.000619962802"
         }
       ],
       "ResponseHeaders": [
@@ -77,152 +77,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1584"
+          "Value": "1612"
         },
         {
           "Name": "ETag",
-          "Value": "\"HSu92NVAJbNnluDRmCeqC7u74UhTkiIUJ+jCgHDzmDs=\""
+          "Value": "\"bquTkngYSWPRISV3wMQSVqrqPUj4yS4PHaExIEenrsY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 09:51:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM="
-        }
-      ]
-    },
-    {
-      "Route": "index.html",
-      "AssetFile": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7355"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 09:51:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM="
-        }
-      ]
-    },
-    {
-      "Route": "index.html.gz",
-      "AssetFile": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-u8w3k517au.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1584"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HSu92NVAJbNnluDRmCeqC7u74UhTkiIUJ+jCgHDzmDs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 09:51:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HSu92NVAJbNnluDRmCeqC7u74UhTkiIUJ+jCgHDzmDs="
-        }
-      ]
-    },
-    {
-      "Route": "index.u8w3k517au.html",
-      "AssetFile": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-u8w3k517au.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000630914826"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1584"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HSu92NVAJbNnluDRmCeqC7u74UhTkiIUJ+jCgHDzmDs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 09:51:59 GMT"
+          "Value": "Sun, 12 Jan 2025 10:56:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -242,13 +105,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM=\""
+          "Value": "W/\"ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u8w3k517au"
+          "Value": "3uc2lnl9xi"
         },
         {
           "Name": "label",
@@ -256,13 +119,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM="
+          "Value": "sha256-ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0="
         }
       ]
     },
     {
-      "Route": "index.u8w3k517au.html",
-      "AssetFile": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\wwwroot\\index.html",
+      "Route": "index.3uc2lnl9xi.html",
+      "AssetFile": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -271,7 +134,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7355"
+          "Value": "7426"
         },
         {
           "Name": "Content-Type",
@@ -279,11 +142,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM=\""
+          "Value": "\"ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 09:51:59 GMT"
+          "Value": "Sun, 12 Jan 2025 10:56:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -293,7 +156,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u8w3k517au"
+          "Value": "3uc2lnl9xi"
         },
         {
           "Name": "label",
@@ -301,13 +164,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AqLirqBU683HJspkH/N2DSExpG9PVfbYadBcBNWyEjM="
+          "Value": "sha256-ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0="
         }
       ]
     },
     {
-      "Route": "index.u8w3k517au.html.gz",
-      "AssetFile": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-u8w3k517au.gz",
+      "Route": "index.3uc2lnl9xi.html.gz",
+      "AssetFile": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-3uc2lnl9xi.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -316,7 +179,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1584"
+          "Value": "1612"
         },
         {
           "Name": "Content-Type",
@@ -324,11 +187,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HSu92NVAJbNnluDRmCeqC7u74UhTkiIUJ+jCgHDzmDs=\""
+          "Value": "\"bquTkngYSWPRISV3wMQSVqrqPUj4yS4PHaExIEenrsY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 09:51:59 GMT"
+          "Value": "Sun, 12 Jan 2025 10:56:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -346,7 +209,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u8w3k517au"
+          "Value": "3uc2lnl9xi"
         },
         {
           "Name": "label",
@@ -354,7 +217,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HSu92NVAJbNnluDRmCeqC7u74UhTkiIUJ+jCgHDzmDs="
+          "Value": "sha256-bquTkngYSWPRISV3wMQSVqrqPUj4yS4PHaExIEenrsY="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-3uc2lnl9xi.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000619962802"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1612"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bquTkngYSWPRISV3wMQSVqrqPUj4yS4PHaExIEenrsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 10:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7426"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 10:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ey7mOGlIJppbbkaO3nZycX4YPDpe1Au/SgEqGCnH4w0="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "c:\\NET\\Back-End Development\\Lab12\\UserManagementAPI\\obj\\Debug\\net9.0\\compressed\\elr5iiv9ef-3uc2lnl9xi.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bquTkngYSWPRISV3wMQSVqrqPUj4yS4PHaExIEenrsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 10:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bquTkngYSWPRISV3wMQSVqrqPUj4yS4PHaExIEenrsY="
         }
       ]
     }
