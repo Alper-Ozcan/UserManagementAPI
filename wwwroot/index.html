@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <script>
+        var jwtToken = '';
+
+        async function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+                alert('Login successful');
+                jwtToken = data.token;
+                console.log('Token:', jwtToken);
+            } else {
+                alert('Login failed: ' + data.message);
+            }
+        }
+
+        async function getAllUsers() {
+            
+            const response = await fetch('/User', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'authorization': `Bearer ${jwtToken}` // Token'ı Authorization başlığına ekle
+                }
+            });
+
+            if (response.ok) {
+                const users = await response.json();
+                console.log('Function getAllUsers Token: ' , jwtToken);
+                console.log('Function getAllUsers users: ', users); 
+                console.log('Function getAllUsers Authorization : ', response.headers.get('authorization'));
+
+               // Kullanıcıları görüntülemek için div'i temizleyin
+               const usersTableBody = document.getElementById('usersTableBody');
+               usersTableBody.innerHTML = '';
+
+                // Kullanıcıları input alanları içinde görüntüleyin
+                users.forEach(user => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td><input type="text" id="userId-${user.id}" value="${user.id}" readonly></td>
+                        <td><input type="text" id="userEmail-${user.id}" value="${user.email}"></td>
+                        <td><input type="text" id="userPassword-${user.id}" value="${user.password}"></td>
+                        <td><input type="text" id="userRole-${user.id}" value="${user.role}"></td>
+                        <td><button onclick="saveUser(${user.id})">Save</button></td>
+                        <td><button onclick="deleteUser(${user.id})">Delete</button></td>
+                    `;
+                    usersTableBody.appendChild(row);
+                });
+
+            } else {
+                alert('Failed to get users: ' + response.statusText);
+            }
+        }
+
+
+        async function createUser() {
+            //const email = prompt("Enter email:");
+            //const password = prompt("Enter password:");
+            //const role = prompt("Enter role:");
+            const email = document.getElementById(`userNewEmail`).value;
+            const password = document.getElementById(`userNewPassword`).value;
+            const role = document.getElementById(`userNewRole`).value;          
+            const response = await fetch('/User', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                     'authorization': `Bearer ${jwtToken}` // Token'ı Authorization başlığına ekle
+                },
+                body: JSON.stringify({ email, password, role })
+            });
+            if (response.ok) {
+                getAllUsers();
+            } else {
+                alert("Failed to create user");
+            }
+        }
+
+        // Kullanıcıyı güncelleme işlemi
+        async function saveUser(userId) {
+            //const token = localStorage.getItem('jwtToken'); // Token'ı localStorage'dan al
+            const email = document.getElementById(`userEmail-${userId}`).value;
+            const password = document.getElementById(`userPassword-${userId}`).value;
+            const role = document.getElementById(`userRole-${userId}`).value;
+
+            const response = await fetch(`/User/${userId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'authorization': `Bearer ${jwtToken}` // Token'ı Authorization başlığına ekle
+                },
+                body: JSON.stringify({ id: userId, email: email, password : password, role: role })
+            });
+
+            if (response.ok) {
+                alert('User updated successfully');
+                getAllUsers();
+            } else {
+                alert('Failed to update user');
+            }
+        }
+
+        // Kullanıcıyı silme işlemi
+        async function deleteUser(userId) {
+            //const token = localStorage.getItem('jwtToken'); // Token'ı localStorage'dan al
+
+            const response = await fetch(`/User/${userId}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'authorization': `Bearer ${jwtToken}` // Token'ı Authorization başlığına ekle
+                }
+            });
+
+            if (response.ok) {
+                alert('User deleted successfully');
+                getAllUsers();
+            } else {
+                alert('Failed to delete user');
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+    <div>
+        <h2>User Management</h2>
+        <div id="userCreate">
+            <button onclick="createUser()">Create New User</button>
+            <div id="newUser">
+                <tr>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="userNewEmail"></td>
+                    <td><input type="text" id="userNewPassword"></td>
+                    <td><input type="text" id="userNewRole"></td>
+                </tr>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="userManage">
+            <button onclick="getAllUsers()">Get All Users</button>
+            <div id="usersDiv">
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Save</th>
+                    <th>Delete</th>
+                </tr>
+                <table id="usersTableBody">
+                    <!-- Kullanıcılar burada listelenecek -->
+                </table>        
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

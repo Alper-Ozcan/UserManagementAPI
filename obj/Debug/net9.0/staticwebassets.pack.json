@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\NET\\Back-End Development\\Lab11\\UserManagementAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.UserManagementAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.UserManagementAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.UserManagementAPI.props",
+      "PackagePath": "build\\UserManagementAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.UserManagementAPI.props",
+      "PackagePath": "buildMultiTargeting\\UserManagementAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.UserManagementAPI.props",
+      "PackagePath": "buildTransitive\\UserManagementAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
